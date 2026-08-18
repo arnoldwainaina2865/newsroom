@@ -1,0 +1,21 @@
+{
+  "name": "newsroom",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@11.22.0",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "db:generate": "pnpm --filter @newsroom/db generate",
+    "db:migrate": "pnpm --filter @newsroom/db migrate",
+    "db:studio": "pnpm --filter @newsroom/db studio"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.0",
+    "typescript": "^5.7.0"
+  }
+}
